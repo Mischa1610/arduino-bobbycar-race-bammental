@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "bobbycar-race-bammental": "apps/bobbycar-race-bammental",
+    "bobbycar-race-bammental-e2e": "apps/bobbycar-race-bammental-e2e"
+  }
+}
