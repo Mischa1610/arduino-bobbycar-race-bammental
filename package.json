@@ -16,6 +16,9 @@
     "name": "Michael Alekseew",
     "email": "alekseew.m@googlemail.com"
   },
+  "repository": {
+    "url": "https://github.com/Mischa1610/arduino-bobbycar-race-bammental"
+  },
   "license": "MIT",
   "scripts": {
     "ng": "nx",
