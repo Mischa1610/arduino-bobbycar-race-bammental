@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bobbycar-race-bammental": {
+      "hosting": {
+        "bobbycar-race-bammental": [
+          "bobbycar-race-bammental"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bobbycar-race-bammental"
+  }
+}
