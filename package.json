@@ -16,15 +16,24 @@
     "name": "Michael Alekseew",
     "email": "alekseew.m@googlemail.com"
   },
+  "repository": {
+    "url": "https://github.com/Mischa1610/arduino-bobbycar-race-bammental"
+  },
   "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=16.15.0",
+    "npm": ">=8.11.0"
+  },
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
-    "start": "nx serve",
+    "start": "concurrently -k -p '[{name}]' -n 'Backend-Nest,Frontend-Angular' -c 'magenta.bold,cyan.bold' 'npm run start-be' 'npm run start-fe'",
+    "start-be": "nx serve api",
+    "start-fe": "nx serve bobbycar-race-bammental",
     "build": "nx build",
     "test": "nx test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~14.0.0",
     "@angular/common": "~14.0.0",
@@ -66,6 +75,7 @@
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "~5.24.0",
     "@typescript-eslint/parser": "~5.24.0",
+    "concurrently": "^7.2.2",
     "cypress": "^9.1.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",

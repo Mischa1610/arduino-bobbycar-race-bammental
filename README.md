@@ -1,6 +1,17 @@
 
 
-# AlekseewArduino
+# Alekseew - Arduino - Bobbycar Race Bammental
+
+Get data from arduino through the serial port and setup the bobby-car race that is hold in Bammental - Germany.
+
+## Prerequisites
+
+Only Node.js with npm is needed:
+
+- Node.js >= 16.15.0
+- npm >= 8.11.0
+
+## NX
 
 This project was generated using [Nx](https://nx.dev).
 
