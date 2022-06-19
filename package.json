@@ -19,6 +19,7 @@
   "repository": {
     "url": "https://github.com/Mischa1610/arduino-bobbycar-race-bammental"
   },
+  "homepage": "https://bobbycar-race-bammental.web.app",
   "license": "MIT",
   "private": true,
   "engines": {
