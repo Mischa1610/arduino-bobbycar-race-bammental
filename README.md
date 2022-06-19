@@ -1,4 +1,4 @@
-
+[![CI](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/actions/workflows/actions.yml/badge.svg)](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/actions/workflows/actions.yml)
 
 # Alekseew - Arduino - Bobbycar Race Bammental
 
