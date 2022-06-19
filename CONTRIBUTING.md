@@ -65,7 +65,42 @@ For more information about using a codespace for working on GitHub documentation
 
 ### Commit your update
 
-Commit the changes once you are happy with them. See [Atom's contributing guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) to know how to use emoji for commit messages.
+Commit the changes once you are happy with them.
+Make sure your commit messages meet the [conventional commit format](https://conventionalcommits.org).
+
+In general the pattern mostly looks like this:
+
+```sh
+type(scope?): subject  #scope is optional; multiple scopes are supported (current delimiter options: "/", "\" and ",")
+```
+
+Real world examples can look like this:
+
+```
+chore: run tests on travis ci
+```
+
+```
+fix(server): send cors headers
+```
+
+```
+feat(blog): add comment section
+```
+
+Common types according to [commitlint-config-conventional (based on the Angular convention)](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum) can be:
+
+- build
+- chore
+- ci
+- docs
+- feat
+- fix
+- perf
+- refactor
+- revert
+- style
+- test
 
 Once your changes are ready, don't forget to [self-review](/contributing/self-review.md) to speed up the review process:zap:.
 
