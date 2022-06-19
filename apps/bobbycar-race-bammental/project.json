@@ -90,6 +90,16 @@
         "jestConfig": "apps/bobbycar-race-bammental/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "prerender": false,
+        "ssr": false,
+        "browserTarget": "bobbycar-race-bammental:build:production",
+        "firebaseProject": "bobbycar-race-bammental",
+        "firebaseHostingSite": "bobbycar-race-bammental"
+      }
     }
   },
   "tags": []
