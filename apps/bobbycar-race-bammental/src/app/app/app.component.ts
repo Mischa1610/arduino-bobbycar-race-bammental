@@ -1,4 +1,4 @@
-import { Message } from '@alekseew-arduino/api-interfaces';
+import { API_PREFIX, Message } from '@alekseew-arduino/api-interfaces';
 import { HttpClient } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
@@ -20,6 +20,6 @@ export class AppComponent {
     { link: '/rankings', title: 'Ranglisten', disabled: true },
   ];
 
-  hello$ = this.http.get<Message>('/api/hello');
+  hello$ = this.http.get<Message>(`/${API_PREFIX}/hello`);
   constructor(private http: HttpClient) {}
 }
