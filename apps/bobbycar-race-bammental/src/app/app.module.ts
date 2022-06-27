@@ -28,11 +28,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { environment } from '../environments/environment';
+import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AppComponent } from './app/app.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 
 @NgModule({
-  declarations: [AppComponent, MainNavigationComponent],
+  declarations: [AppComponent, MainNavigationComponent, AppFooterComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

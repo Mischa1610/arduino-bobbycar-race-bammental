@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@alekseew-arduino/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@alekseew-arduino/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@alekseew-arduino/share-ui": ["libs/share-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
