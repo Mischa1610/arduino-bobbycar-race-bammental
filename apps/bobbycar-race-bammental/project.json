@@ -13,11 +13,14 @@
         "polyfills": "apps/bobbycar-race-bammental/src/polyfills.ts",
         "tsConfig": "apps/bobbycar-race-bammental/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/bobbycar-race-bammental/src/favicon.ico",
-          "apps/bobbycar-race-bammental/src/assets"
+        "assets": ["apps/bobbycar-race-bammental/src/assets"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/bobbycar-race-bammental/src/styles.scss"
         ],
-        "styles": ["apps/bobbycar-race-bammental/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/bobbycar-race-bammental/src/styles"]
+        },
         "scripts": []
       },
       "configurations": {
@@ -89,6 +92,16 @@
       "options": {
         "jestConfig": "apps/bobbycar-race-bammental/jest.config.ts",
         "passWithNoTests": true
+      }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "prerender": false,
+        "ssr": false,
+        "browserTarget": "bobbycar-race-bammental:build:production",
+        "firebaseProject": "bobbycar-race-bammental",
+        "firebaseHostingSite": "bobbycar-race-bammental"
       }
     }
   },

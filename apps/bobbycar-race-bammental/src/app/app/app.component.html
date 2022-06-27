@@ -1,9 +1,15 @@
-<div style="text-align: center">
-  <h1>Welcome to bobbycar-race-bammental!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-    alt="Nx - Smart, Fast and Extensible Build System"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+<alekseew-arduino-main-navigation
+  [appTitle]="APP_TITLE"
+  [menuTitle]="MENU_TITLE"
+  [links]="LINKS"
+>
+  <div style="text-align: center">
+    <img
+      src="assets/BobbycarLogo.svg"
+      alt="Bammentaler Bobbycar Rennen - Logo"
+      class="bbcr-logo"
+    />
+    <h1>{{ GREETINGS }}</h1>
+  </div>
+  <alekseew-arduino-app-footer></alekseew-arduino-app-footer>
+</alekseew-arduino-main-navigation>

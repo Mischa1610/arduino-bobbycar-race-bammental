@@ -1,15 +1,16 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
+import { API_PREFIX } from '@alekseew-arduino/api-interfaces';
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 
 import { AppModule } from './app/app/app.module';
 
+/**
+ * This is not a production server yet!
+ * This is only a minimal backend to get started.
+ */
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const globalPrefix = 'api';
+  const globalPrefix = API_PREFIX;
   app.setGlobalPrefix(globalPrefix);
   const port = process.env.PORT || 3333;
   await app.listen(port);

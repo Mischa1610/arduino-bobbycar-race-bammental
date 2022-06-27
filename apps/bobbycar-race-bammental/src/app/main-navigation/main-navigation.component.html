@@ -1,0 +1,43 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    fixedInViewport
+    [style.width]="sidenavWidth"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar class="sidenav-toolbar">
+      <img
+        src="assets/favicons/android-chrome-192x192.png"
+        alt="BBCR-Logo"
+        class="bbcr-logo"
+      />
+      {{ menuTitle }}
+    </mat-toolbar>
+    <mat-nav-list>
+      <a
+        *ngFor="let link of links"
+        mat-list-item
+        href="{{ link.link }}"
+        disabled="{{ !!link.disabled }}"
+        >{{ link.title }}</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>{{ appTitle }}</span>
+    </mat-toolbar>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

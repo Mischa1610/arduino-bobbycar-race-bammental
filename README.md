@@ -1,6 +1,8 @@
-[![CI](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/actions/workflows/actions.yml/badge.svg)](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/actions/workflows/actions.yml)
-
 # Alekseew - Arduino - Bobbycar Race Bammental
+
+[![CI](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/actions/workflows/actions.yml/badge.svg)](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/actions/workflows/actions.yml)
+[![Checks - Group](https://api.checklyhq.com/v1/badges/groups/287308)](https://app.checklyhq.com/groups/287308/edit)
+[![Checks - WebApp](https://api.checklyhq.com/v1/badges/checks/87b1d378-9c92-4993-86f1-d13af0eee184)](https://app.checklyhq.com/checks/87b1d378-9c92-4993-86f1-d13af0eee184)
 
 Get data from arduino through the serial port and setup the bobby-car race that is hold in Bammental - Germany.
 
