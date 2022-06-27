@@ -1,7 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
+import { BbcrLogoModule } from './bbcr-logo/bbcr-logo.module';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, BbcrLogoModule],
+  exports: [BbcrLogoModule],
 })
 export class ShareUiModule {}
