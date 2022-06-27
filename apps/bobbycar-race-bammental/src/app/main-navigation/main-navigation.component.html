@@ -7,7 +7,14 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar>{{ menuTitle }}</mat-toolbar>
+    <mat-toolbar class="sidenav-toolbar">
+      <img
+        src="assets/favicons/android-chrome-192x192.png"
+        alt="BBCR-Logo"
+        class="bbcr-logo"
+      />
+      {{ menuTitle }}
+    </mat-toolbar>
     <mat-nav-list>
       <a
         *ngFor="let link of links"

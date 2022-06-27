@@ -2,5 +2,6 @@
   "SAP HANA Database Explorer.displaySapWebAnalyticsStartupNotification": false,
   "jest.jestCommandLine": "npm test --",
   "vsicons.presets.angular": true,
-  "conventionalCommits.scopes": ["root", "all", "FE", "BE"]
+  "conventionalCommits.scopes": ["root", "all", "FE", "BE"],
+  "cSpell.words": ["bbcr", "sidenav"]
 }
