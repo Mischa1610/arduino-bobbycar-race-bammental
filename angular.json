@@ -5,6 +5,7 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "bobbycar-race-bammental": "apps/bobbycar-race-bammental",
-    "bobbycar-race-bammental-e2e": "apps/bobbycar-race-bammental-e2e"
+    "bobbycar-race-bammental-e2e": "apps/bobbycar-race-bammental-e2e",
+    "share-ui": "libs/share-ui"
   }
 }

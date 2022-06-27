@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/share-ui/src",
+  "prefix": "alekseew-arduino",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/share-ui"],
+      "options": {
+        "jestConfig": "libs/share-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/share-ui/**/*.ts", "libs/share-ui/**/*.html"]
+      }
+    }
+  },
+  "tags": ["ui"]
+}
