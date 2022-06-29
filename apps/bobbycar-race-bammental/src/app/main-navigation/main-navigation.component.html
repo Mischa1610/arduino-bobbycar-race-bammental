@@ -26,7 +26,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" class="header">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -37,6 +37,7 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>{{ appTitle }}</span>
+      <alekseew-arduino-switch-translation></alekseew-arduino-switch-translation>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
