@@ -31,6 +31,7 @@ import { environment } from '../environments/environment';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AppComponent } from './app/app.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [AppComponent, MainNavigationComponent, AppFooterComponent],
@@ -54,6 +55,7 @@ import { MainNavigationComponent } from './main-navigation/main-navigation.compo
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    TranslocoRootModule,
   ],
   providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],
