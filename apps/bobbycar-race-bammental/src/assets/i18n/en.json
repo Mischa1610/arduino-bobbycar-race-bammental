@@ -1,1 +1,16 @@
-{}
+{
+  "app": {
+    "title": "Bammental Bobbycar-Race",
+    "menu": "Menu",
+    "greeting": "Welcome to",
+    "logo": "Logo"
+  },
+  "navigation": {
+    "home": "Home",
+    "times": "Race Times",
+    "rankings": "Rankings"
+  },
+  "footer": {
+    "legalClause": "All rights reserved - All data with reservation and subject to change!"
+  }
+}

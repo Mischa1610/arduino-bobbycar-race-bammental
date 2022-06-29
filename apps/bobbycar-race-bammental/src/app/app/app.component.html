@@ -1,15 +1,17 @@
-<alekseew-arduino-main-navigation
-  [appTitle]="APP_TITLE"
-  [menuTitle]="MENU_TITLE"
-  [links]="LINKS"
->
-  <div style="text-align: center">
-    <img
-      src="assets/BobbycarLogo.svg"
-      alt="Bammentaler Bobbycar Rennen - Logo"
-      class="bbcr-logo"
-    />
-    <h1>{{ GREETINGS }}</h1>
-  </div>
-  <alekseew-arduino-app-footer></alekseew-arduino-app-footer>
-</alekseew-arduino-main-navigation>
+<ng-container *transloco="let t; read: 'app'">
+  <alekseew-arduino-main-navigation
+    [appTitle]="t('title')"
+    [menuTitle]="t('menu')"
+    [links]="navLinks"
+  >
+    <div style="text-align: center">
+      <img
+        src="assets/BobbycarLogo.svg"
+        [alt]="t('title') + ' - ' + t('logo')"
+        class="bbcr-logo"
+      />
+      <h1>{{ t('greeting') }} {{ t('title') }}</h1>
+    </div>
+    <alekseew-arduino-app-footer></alekseew-arduino-app-footer>
+  </alekseew-arduino-main-navigation>
+</ng-container>
