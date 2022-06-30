@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.4.0...v0.4.1) (2022-06-30)
+
+
+### Bug Fixes
+
+* **FE:** :lipstick: fix layout issue with the app footer ([092db52](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/commit/092db52103268547db3799835fc2c8f5e6584182))
+
 ## [0.4.0](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.3.0...v0.4.0) (2022-06-30)
 
 ### Features
