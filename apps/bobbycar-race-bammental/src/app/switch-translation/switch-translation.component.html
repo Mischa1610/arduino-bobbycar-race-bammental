@@ -2,7 +2,12 @@
   name="language-switcher"
   aria-label="Select display language"
   (valueChange)="changeLocale($event)"
+  class="button-toggle-group"
 >
-  <mat-button-toggle value="de" checked="true">DE</mat-button-toggle>
-  <mat-button-toggle value="en">EN</mat-button-toggle>
+  <mat-button-toggle value="de" checked="true" class="button-toggle">
+    <span class="fi fi-de flag"></span>
+  </mat-button-toggle>
+  <mat-button-toggle value="en" class="button-toggle">
+    <span class="fi fi-gb flag"></span>
+  </mat-button-toggle>
 </mat-button-toggle-group>

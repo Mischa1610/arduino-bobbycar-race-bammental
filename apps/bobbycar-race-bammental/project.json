@@ -16,6 +16,7 @@
         "assets": ["apps/bobbycar-race-bammental/src/assets"],
         "styles": [
           "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+          "./node_modules/flag-icons/css/flag-icons.min.css",
           "apps/bobbycar-race-bammental/src/styles.scss"
         ],
         "stylePreprocessorOptions": {

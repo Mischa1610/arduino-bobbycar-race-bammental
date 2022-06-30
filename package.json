@@ -57,6 +57,7 @@
     "@nestjs/platform-express": "^8.0.0",
     "@ngneat/transloco": "^4.1.0",
     "@nrwl/angular": "~14.3.6",
+    "flag-icons": "^6.6.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.5.5",
     "tslib": "^2.0.0",
