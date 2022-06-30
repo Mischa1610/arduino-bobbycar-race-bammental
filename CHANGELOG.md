@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.3.0...v0.4.0) (2022-06-30)
+
+
+### Features
+
+* **FE:** :technologist: show current app version in the footer ([a07fdeb](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/commit/a07fdeba24c781fc98d74b63e82bc3cc91f84c33)), closes [#36](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/issues/36)
+
 ## [0.3.0](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.2.0...v0.3.0) (2022-06-30)
 
 
