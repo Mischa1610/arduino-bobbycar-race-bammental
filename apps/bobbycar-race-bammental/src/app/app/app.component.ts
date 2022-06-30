@@ -19,7 +19,6 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private translocoService: TranslocoService) {}
 
   protected navLinks: Links[] = [];
-
   private _transNavSub!: Subscription;
 
   /**

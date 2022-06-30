@@ -9,10 +9,24 @@
   right: 6px;
   width: auto;
   height: $footer-height;
-  text-align: end;
-  font-size: smaller;
 
-  .subtitle {
-    font-size: xx-small;
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: smaller;
+
+    .left {
+      padding-left: 6px;
+    }
+
+    .right {
+      text-align: end;
+
+      .subtitle {
+        font-size: xx-small;
+      }
+    }
   }
 }

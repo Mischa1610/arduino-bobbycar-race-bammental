@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { environment } from '@env/environment';
 
 @Component({
   selector: 'alekseew-arduino-app-footer',
@@ -6,4 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./app-footer.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppFooterComponent {}
+export class AppFooterComponent {
+  protected readonly APP_VERSION: string = environment.appVersion;
+}

@@ -1,4 +1,9 @@
 <ng-container *transloco="let t; read: 'footer'">
-  <div class="title">Copyright © Michael Alekseew</div>
-  <div class="subtitle">{{ t('legalClause') }}</div>
+  <div class="footer">
+    <div class="app-version left">v{{ APP_VERSION }}</div>
+    <div class="right">
+      <div class="title">Copyright © Michael Alekseew</div>
+      <div class="subtitle">{{ t('legalClause') }}</div>
+    </div>
+  </div>
 </ng-container>
