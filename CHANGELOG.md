@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.0](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.2.0...v0.3.0) (2022-06-30)
+
+
+### Features
+
+* **FE:** :globe_with_meridians: add initial setup for translation with transloco ([cd90cce](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/commit/cd90cced710e86355981ccaa938cd4e3ca7abcba))
+* **FE:** :globe_with_meridians: add toggle to switch language in header ([3a37928](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/commit/3a37928ab085939b39dfc6660a6b756da55cc028))
+* **FE:** :globe_with_meridians: replace hardcoded text with translation keys ([aa4b15f](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/commit/aa4b15fec17a7f5fc170645f772e857b85dab8ff))
+* **FE:** :globe_with_meridians: use country flags to select language ([3b1ac13](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/commit/3b1ac130e85a78649c8ad978e636520c2280fc94)), closes [#35](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/issues/35)
+
 ## [0.2.0](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.1.0...v0.2.0) (2022-06-27)
 
 ### Features
