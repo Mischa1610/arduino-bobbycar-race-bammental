@@ -1,6 +1,6 @@
 {
   "name": "alekseew-arduino",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Get data from arduino through the serial port and setup the bobby-car race that is hold in Bammental - Germany.",
   "keywords": [
     "arduino",
