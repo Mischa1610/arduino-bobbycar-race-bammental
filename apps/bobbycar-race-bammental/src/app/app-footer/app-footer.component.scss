@@ -3,23 +3,19 @@
 :host {
   display: block;
 
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
   right: 6px;
-  width: auto;
+  width: 100%;
   height: $footer-height;
 
   .footer {
     display: flex;
+    align-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     font-size: smaller;
-
-    .left {
-      padding-left: 6px;
-    }
 
     .right {
       text-align: end;

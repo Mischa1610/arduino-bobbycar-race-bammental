@@ -1,5 +1,6 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { environment } from '@env/environment';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
@@ -16,6 +17,8 @@ export interface Links {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MainNavigationComponent {
+  protected readonly APP_VERSION: string = environment.appVersion;
+
   @Input()
   public appTitle = '';
 

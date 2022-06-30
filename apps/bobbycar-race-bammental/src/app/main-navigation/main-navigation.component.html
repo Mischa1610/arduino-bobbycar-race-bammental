@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container" fullscreen>
   <mat-sidenav
     #drawer
     fixedInViewport
@@ -24,6 +24,7 @@
         >{{ link.title }}</a
       >
     </mat-nav-list>
+    <div class="app-version">v{{ APP_VERSION }}</div>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary" class="header">

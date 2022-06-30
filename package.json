@@ -27,7 +27,7 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "concurrently -k -p '[{name}]' -n 'Backend-Nest,Frontend-Angular' -c 'magenta.bold,cyan.bold' 'npm run start-be' 'npm run start-fe'",
     "start-be": "nx serve api",
-    "start-fe": "nx serve bobbycar-race-bammental",
+    "start-fe": "nx serve bobbycar-race-bammental --host 0.0.0.0",
     "build": "npm run build-be & npm run build-fe",
     "build-be": "nx build api --prod",
     "build-fe": "nx build bobbycar-race-bammental --prod",
