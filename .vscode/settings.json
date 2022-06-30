@@ -3,5 +3,5 @@
   "jest.jestCommandLine": "npm test --",
   "vsicons.presets.angular": true,
   "conventionalCommits.scopes": ["root", "all", "FE", "BE"],
-  "cSpell.words": ["bbcr", "sidenav"]
+  "cSpell.words": ["Bammentaler", "bbcr", "sidenav", "transloco"]
 }

@@ -1,0 +1,16 @@
+{
+  "app": {
+    "title": "Bammentaler Bobbycar-Rennen",
+    "menu": "Menu",
+    "greeting": "Willkommen zum",
+    "logo": "Logo"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "times": "Rennzeiten",
+    "rankings": "Ranglisten"
+  },
+  "footer": {
+    "legalClause": "Alle Rechte vorbehalten - Alle Angaben unter Vorbehalt und ohne Gewähr!"
+  }
+}

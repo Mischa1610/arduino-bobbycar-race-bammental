@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
+import { Subscription } from 'rxjs';
 
 import { Links } from '../main-navigation/main-navigation.component';
 
@@ -8,14 +15,33 @@ import { Links } from '../main-navigation/main-navigation.component';
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
-  protected readonly APP_TITLE = 'Bammentaler Bobbycar-Rennen';
-  protected readonly MENU_TITLE = 'Menu';
-  protected readonly GREETINGS = 'Willkommen zum ' + this.APP_TITLE;
+export class AppComponent implements OnInit, OnDestroy {
+  constructor(private translocoService: TranslocoService) {}
 
-  protected readonly LINKS: Links[] = [
-    { link: '#', title: 'Home' },
-    { link: '/times', title: 'Rennzeiten', disabled: true },
-    { link: '/rankings', title: 'Ranglisten', disabled: true },
-  ];
+  protected navLinks: Links[] = [];
+
+  private _transNavSub!: Subscription;
+
+  /**
+   * Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+   */
+  ngOnInit(): void {
+    this._transNavSub = this.translocoService
+      .selectTranslateObject('navigation')
+      .subscribe(
+        (transNav) =>
+          (this.navLinks = [
+            { link: '#', title: transNav.home },
+            { link: '/times', title: transNav.times, disabled: true },
+            { link: '/rankings', title: transNav.rankings, disabled: true },
+          ])
+      );
+  }
+
+  /**
+   * Called once, before the instance is destroyed.
+   */
+  ngOnDestroy(): void {
+    this._transNavSub.unsubscribe();
+  }
 }
