@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.4.1...v0.5.0) (2023-12-03)
+
+
+### Features
+
+* **FE:** move transloco to i18n file ([0a678cc](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/commit/0a678cc413e9663058c1226b640a8f171adeeb66))
+
 ## [0.4.1](https://github.com/Mischa1610/arduino-bobbycar-race-bammental/compare/v0.4.0...v0.4.1) (2022-06-30)
 
 
