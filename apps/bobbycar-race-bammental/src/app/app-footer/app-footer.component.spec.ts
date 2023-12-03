@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { getTranslocoTestModule } from '../i18n/transloco-testing.module';
 import { AppFooterComponent } from './app-footer.component';
 
 describe('AppFooterComponent', () => {
@@ -8,6 +9,7 @@ describe('AppFooterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [getTranslocoTestModule()],
       declarations: [AppFooterComponent],
     }).compileComponents();
 

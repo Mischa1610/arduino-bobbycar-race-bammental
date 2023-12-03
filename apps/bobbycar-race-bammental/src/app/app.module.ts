@@ -17,7 +17,7 @@ import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AppComponent } from './app/app.component';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { SwitchTranslationComponent } from './switch-translation/switch-translation.component';
-import { TranslocoRootModule } from './transloco-root.module';
+import { TranslocoRootModule } from './i18n/transloco-root.module';
 
 const ANGULAR_MODULES = [
   BrowserModule,
